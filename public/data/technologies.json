@@ -4,7 +4,7 @@
     "name": "React",
     "category": "Frontend",
     "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
-    "icon": "../../public/images/technologies/React.svg",
+    "icon": "/images/technologies/React.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Popular"
@@ -14,7 +14,7 @@
     "name": "Next.js",
     "category": "Frontend",
     "description": "A React framework for building fast, scalable, and SEO-friendly web applications.",
-    "icon": "../../public/images/technologies/next.js.svg",
+    "icon": "/images/technologies/Next.js.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Fast"
@@ -24,7 +24,7 @@
     "name": "Node.js",
     "category": "Backend",
     "description": "A JavaScript runtime that enables scalable server-side and backend application development.",
-    "icon": "../../public/images/technologies/node.js.svg",
+    "icon": "/images/technologies/Node.js.svg",
     "rating": 4.7,
     "difficulty": "Intermediate",
     "badge": "Popular"
@@ -34,7 +34,7 @@
     "name": "Express",
     "category": "Backend",
     "description": "A lightweight and flexible Node.js framework for building APIs and web servers.",
-    "icon": "../../public/images/technologies/",
+    "icon": "/images/technologies/exprssjs.svg",
     "rating": 4.6,
     "difficulty": "Beginner-Friendly",
     "badge": "Essential"
@@ -44,7 +44,7 @@
     "name": "PostgreSQL",
     "category": "Database",
     "description": "A powerful open-source relational database known for reliability and advanced SQL capabilities.",
-    "icon": "../../public/images/technologies/PostgresSQL.svg",
+    "icon": "/images/technologies/PostgresSQL.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Essential"
@@ -54,7 +54,7 @@
     "name": "MongoDB",
     "category": "Database",
     "description": "A document-oriented NoSQL database designed for flexible and scalable applications.",
-    "icon": "../../public/images/technologies/",
+    "icon": "/images/technologies/mongo.png",
     "rating": 4.7,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
@@ -64,7 +64,7 @@
     "name": "TypeScript",
     "category": "Language",
     "description": "A strongly typed programming language that builds on JavaScript for safer and more maintainable code.",
-    "icon": "../../public/images/technologies/typescript.svg",
+    "icon": "/images/technologies/TypeScript.svg",
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Essential"
@@ -74,7 +74,7 @@
     "name": "Python",
     "category": "Language",
     "description": "A versatile, readable programming language widely used for web development, automation, data, and AI.",
-    "icon": "../../public/images/technologies/",
+    "icon": "/images/technologies/python-5 1.png",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
@@ -84,7 +84,7 @@
     "name": "Tailwind CSS",
     "category": "Styling",
     "description": "A utility-first CSS framework for rapidly creating modern and responsive user interfaces.",
-    "icon": "../../public/images/technologies/Tailwind-CSS.svg",
+    "icon": "/images/technologies/Tailwind-CSS.svg",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
     "badge": "Fast"
@@ -94,7 +94,7 @@
     "name": "Docker",
     "category": "DevOps",
     "description": "A containerization platform that packages applications and their dependencies into portable containers.",
-    "icon": "../../public/images/technologies/docker.svg",
+    "icon": "/images/technologies/Docker.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
     "badge": "Containers"
@@ -104,7 +104,7 @@
     "name": "Kubernetes",
     "category": "DevOps",
     "description": "An open-source platform for automating deployment, scaling, and management of containers.",
-    "icon": "../../public/images/technologies/",
+    "icon": "/images/technologies/kubernetes.png",
     "rating": 4.7,
     "difficulty": "Advanced",
     "badge": "Containers"
@@ -114,7 +114,7 @@
     "name": "Git",
     "category": "Tools",
     "description": "A distributed version control system for tracking code changes and collaborating on projects.",
-    "icon": "../../public/images/technologies/",
+    "icon": "/images/technologies/git.png",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Essential"
@@ -124,7 +124,7 @@
     "name": "GitHub",
     "category": "Tools",
     "description": "A platform for hosting Git repositories, collaborating on code, and managing software projects.",
-    "icon": "../../public/images/technologies/",
+    "icon": "/images/technologies/github.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
@@ -134,7 +134,7 @@
     "name": "Redis",
     "category": "Database",
     "description": "An in-memory data store commonly used for caching, sessions, queues, and real-time applications.",
-    "icon": "../../public/images/technologies/redis.svg",
+    "icon": "/images/technologies/Redis.svg",
     "rating": 4.7,
     "difficulty": "Intermediate",
     "badge": "Fast"
@@ -144,7 +144,7 @@
     "name": "Vite",
     "category": "Tools",
     "description": "A modern frontend build tool providing extremely fast development startup and hot module replacement.",
-    "icon": "../../public/images/technologies/",
+    "icon": "/images/technologies/favicon.svg",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
     "badge": "Fast"
