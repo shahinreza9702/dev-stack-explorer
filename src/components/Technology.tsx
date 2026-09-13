@@ -54,7 +54,7 @@ const Technology = ({ technologiesPromise }: TechnologyProps) => {
 
   return (
     <>
-      <div className="col-span-3 grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:col-span-3 lg:grid-cols-3">
         {technologies.map((technology) => (
           <TechnologyCard
             key={technology.id}

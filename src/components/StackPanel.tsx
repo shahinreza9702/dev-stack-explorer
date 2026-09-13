@@ -15,7 +15,7 @@ const StackPanel = ({
   const hasStack = selectedTechnologies.length > 0;
 
   return (
-    <div className="card bg-base-100 w-96 shadow-sm">
+    <div className="card w-full bg-base-100 shadow-sm">
       <div className="card-body">
         <h2 className="card-title">Your Stack</h2>
 
