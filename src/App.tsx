@@ -5,6 +5,9 @@ import type { ITechnology } from "./types/technologyTypes";
 
 const technologyFetch = async (): Promise<ITechnology[]> => {
   const res = await fetch("/data/technologies.json");
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
   const data = await res.json();
   return data;
 };
@@ -13,9 +16,29 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <Suspense fallback={<h2>Fetching technologies from data</h2>}>
-        <Technology technologiesPromise={technologiesPromise}></Technology>
-      </Suspense>
+      <section className="py-6 bg-base-100">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-left">
+            Explore the <span className="text-pink-600">Technologies</span>
+          </h2>
+          <p className="text-lg text-left text-gray-600 mt-4">
+            Pick one technology per category to build your ideal stack.
+          </p>
+          <div className="grid grid-cols-4 gap-6">
+            <Suspense
+              fallback={
+                <h2 className="text-pink-600 text-xl font-bold">
+                  Fetching technologies from data
+                </h2>
+              }
+            >
+              <Technology
+                technologiesPromise={technologiesPromise}
+              ></Technology>
+            </Suspense>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

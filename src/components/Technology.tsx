@@ -10,8 +10,8 @@ const Technology = ({ technologiesPromise }: TechnologyProps) => {
   const technologies = use(technologiesPromise);
 
   return (
-    <section className="w-full base-100">
-      <div className="container mx-auto grid grid-cols-4">
+    <>
+      <div className="col-span-3 grid grid-cols-3 gap-6">
         {technologies.map((technology: ITechnology) => {
           return (
             <TechnologyCard
@@ -21,7 +21,9 @@ const Technology = ({ technologiesPromise }: TechnologyProps) => {
           );
         })}
       </div>
-    </section>
+
+      <div className="col-span-1"></div>
+    </>
   );
 };
 
