@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import Technology from "./components/Technology";
 import type { ITechnology } from "./types/technologyTypes";
 import Hero from "./components/Hero";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"
 
 const technologyFetch = async (): Promise<ITechnology[]> => {
   const res = await fetch("/data/technologies.json");
@@ -41,6 +43,7 @@ function App() {
           </div>
         </div>
       </section>
+      <ToastContainer position="top-right" autoClose={2000} />
     </>
   );
 }

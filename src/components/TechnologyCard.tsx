@@ -57,7 +57,8 @@ const TechnologyCard = ({
             disabled={isSelected}
             className="btn btn-neutral btn-block font-bold"
           >
-            {isSelected ? "Added to Stack" : "Add to Stack"}
+            {isSelected ? "✓ Added to Stack" : "Add to Stack"}
+
           </button>
         </div>
       </div>

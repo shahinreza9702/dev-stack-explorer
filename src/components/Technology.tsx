@@ -2,6 +2,7 @@ import { use, useState } from "react";
 import type { ITechnology } from "../types/technologyTypes";
 import TechnologyCard from "./TechnologyCard";
 import StackPanel from "./StackPanel";
+import { toast } from "react-toastify";
 
 interface TechnologyProps {
   technologiesPromise: Promise<ITechnology[]>;
@@ -15,19 +16,40 @@ const Technology = ({ technologiesPromise }: TechnologyProps) => {
   >([]);
 
   const addToStack = (technology: ITechnology) => {
-    setSelectedTechnologies((current) => {
-      const alreadySelected = current.some((item) => item.id === technology.id);
+    const alreadySelected = selectedTechnologies.some(
+      (item) => item.id === technology.id,
+    );
 
-      if (alreadySelected) {
-        return current;
-      }
+    if (alreadySelected) {
+      toast.warning(`${technology.name} is already in your stack.`);
+      return;
+    }
 
-      return [...current, technology];
-    });
+    setSelectedTechnologies((current) => [...current, technology]);
+
+    toast.success(`${technology.name} added to your stack.`);
+  };
+
+  const removeFromStack = (technologyId: number | string) => {
+    const removedTechnology = selectedTechnologies.find(
+      (item) => item.id === technologyId,
+    );
+
+    if (!removedTechnology) return;
+
+    setSelectedTechnologies((current) =>
+      current.filter((item) => item.id !== technologyId),
+    );
+
+    toast.info(`${removedTechnology.name} removed from your stack.`);
   };
 
   const handleRemoveAll = () => {
+    if (selectedTechnologies.length === 0) return;
+
     setSelectedTechnologies([]);
+
+    toast.info("All technologies removed from your stack.");
   };
 
   return (
@@ -49,6 +71,7 @@ const Technology = ({ technologiesPromise }: TechnologyProps) => {
         <StackPanel
           selectedTechnologies={selectedTechnologies}
           onRemoveAll={handleRemoveAll}
+          onRemove={removeFromStack}
         />
       </div>
     </>
