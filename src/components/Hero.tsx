@@ -3,7 +3,7 @@ import HeroImage from "/images/banner-stack.png";
 const Hero = () => {
   return (
     <section className="relative overflow-hidden bg-base-100">
-      <div className="container relative mx-auto flex min-h-[calc(100vh-4rem)] items-center px-4 py-16 lg:py-20">
+      <div className="container relative mx-auto flex min-h-[calc(100vh-4rem)] items-center px-4 py-10 lg:py-16">
         <div className="grid w-full items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Content */}
           <div className="flex flex-col items-start">
