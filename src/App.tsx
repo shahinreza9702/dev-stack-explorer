@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import Navbar from "./components/Navbar";
 import Technology from "./components/Technology";
 import type { ITechnology } from "./types/technologyTypes";
+import Hero from "./components/Hero";
 
 const technologyFetch = async (): Promise<ITechnology[]> => {
   const res = await fetch("/data/technologies.json");
@@ -16,6 +17,7 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
+      <Hero></Hero>
       <section className="py-6 bg-base-100">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-left">
